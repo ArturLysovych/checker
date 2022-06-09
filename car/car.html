@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+.a{
+    height: 110vh;
+width: 100%;
+    background-image: url(images.jpg);
+    max-width: 100%;
+
+}
+.road{
+    width: 100%;
+    height: 35vh;
+    background-color: #444;
+margin-bottom: 5%;
+border-top: 10px white double;
+border-bottom: 10px white double;
+}
+.box{
+    height: 4%;
+    width: 7%;
+    background-color: white;
+    border-radius: 2px;
+}
+.trio{
+    display: flex;
+    justify-content:center ;
+}
+.Rroad{
+    display: flex;
+    align-items: flex-end;
+    height: 65vh;
+}
+.back{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.next{
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+.lamp{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.car{
+ position: relative;
+top: 70px;
+right: 1300px;
+}
+.reuse{
+    cursor: pointer;
+}
+.lines{
+    height: 50%;
+    display: flex;
+align-items: flex-end;
+justify-content: space-around;
+width: 100%;
+}
+.cars{
+    
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-image: url(sportcarX.png) ;
+    background-size: cover;
+    top: 30px;
+    display: flex;
+    transition: .5s;
+}
+.idea{
+    margin-right: 20px;
+}
+.palitra{
+    margin-left: 20px;
+    transition: 0.2s;
+}
+.backgroundsss{
+    width: 25%;
+    height: 11%;
+
+    border-radius: 10px;
+    display: none;
+    margin-left: 35%;
+justify-content: space-around;
+margin-top: 15px;
+
+}
+.backgrounddd{
+    width: 23%;
+    height: 100%;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+    transition: 0.3s;
+
+}
+.duo{
+    display: flex;
+    justify-content: center;
+}
+.idea{
+    cursor: pointer;
+}
+.palitra{
+    cursor: pointer;
+
+}
+.backgrounddd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.car2{
+    cursor: pointer;
+}
+.car3{
+    cursor: pointer;
+}
+.dark{
+    width: 50px;
+    height: 50px;
+background-color: black;
+box-shadow: 0 0 5px black;
+border-radius: 50%;
+margin-left: 95%;
+position: absolute;
+top: 5%;
+cursor: pointer;
+}
+.street{
+    width: 15%;
+    height: 5%;
+    background-image: url(download.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 40%;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 900;
+box-shadow: 0 0 3px white;
+}
+.car4{
+    cursor: pointer;
+}
+.car5{
+    cursor: pointer;
+}
+.combo{
+    background-color: white;
+    width: 15%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+background: rgba(255, 255, 255, .6);
+border-radius: 10px;
+}
+.flow1{
+    width: 9px;
+    height: 7px;
+    background-color: aqua;
+    filter: blur(150%);
+    border-radius: 40%;
+    position: relative;
+    top: 47.5%;
+    left: 95%;
+    filter: blur(120%);
+    display: none;
+    filter: drop-shadow(0 2px 5px aqua);
+}
+.flow2{
+    width: 9px;
+    height: 7px;
+    background-color: yellow;
+    filter: blur(150%);
+    border-radius: 40%;
+    position: relative;
+    top: 47.5%;
+    left: -13%;
+    filter: blur(120%);
+    filter: drop-shadow(0 2px 5px yellow);
+display: none;
+}
+</style>
+</head>
+<body>
+<div class="a" id="a">
+    <div class="dark" id="dark"></div>
+    <div class="street">Street Racer</div>
+    <div class="Rroad" id="Rroad">
+    <div class="road" id="road">
+        <div class="lines">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>  
+        </div>
+<div class="cars" id="cars"><div class="flow1" id="flow1"></div>    
+<div class="flow2" id="flow2"></div>   
+</div>
+
+    </div>
+
+    </div>
+
+<div class="combo">
+    <div class="trio">
+        <img src="back.png" width="50px" height="50px" class="back" id="back" alt="">
+        <img src="reuse.png" width="50px" height="50px" class="reuse" id="reuse" alt="">
+        <img src="next.png" width="50px" height="50px" class="next" id="next" alt="">
+    </div>
+    
+<span class="duo" id="duo">
+<img src="idea.png" width="55px" height="55px" class="idea" id="idea" alt="">
+<img src="1.png" width="55px" height="55px" class="palitra" id="palitra" alt="">
+    </span>        
+</div>
+    <div class="backgroundsss" id="backgroundsss">
+        <div class="backgrounddd"><img src="sedan.png" width="80px" height="80px" class="car2" id="car2" alt=""></div>
+        <div class="backgrounddd"><img src="sports-car.png" width="80px" height="80px" class="car3" id="car3" alt=""></div>
+        <div class="backgrounddd"><img src="transport.png" width="80px" height="80px" class="car4" id="car4" alt=""></div>
+        <div class="backgrounddd"><img src="sportcarX.png" width="80px" height="80px" class="car5" id="car5" alt=""></div>
+    </div>
+    </div>
+
+
+    <script>
+        let move  = 0
+next.onclick = function(){
+    move = move+ 30
+cars.style.marginLeft = move +'px';
+
+
+}
+back.onclick = function(){
+    move = move - 30
+cars.style.marginLeft = move +'px';
+
+}
+
+
+
+let click = 0 
+
+reuse.onclick = function(){
+    if(click == 0){
+        cars.style.transform = 'scaleX(-1)';
+        click = 1
+    }else{
+        cars.style.transform = '';
+        click = 0
+    }
+
+}
+let butt = 0
+palitra.onclick = function(){
+
+    if(butt == 0){
+        backgroundsss.style.display = "flex";
+    butt = 1;
+    }else{
+        backgroundsss.style.display = "";
+        butt = 0;
+    }
+
+}
+car2.onclick = function(){
+cars.style.backgroundImage = 'url(sedan.png)'
+}
+car3.onclick = function(){
+cars.style.backgroundImage = 'url(sports-car.png)'
+}
+car4.onclick = function(){
+cars.style.backgroundImage = 'url(transport.png)'
+}
+car5.onclick = function(){
+cars.style.backgroundImage = 'url(sportcarX.png)'
+}
+
+let darks = 0
+dark.onclick = function(){
+    if(darks==0){
+        a.style.boxShadow = 'inset 10px 200px 500px #000';
+    dark.style.backgroundColor = 'white';
+    dark.style.boxShadow = '0 0 5px white'
+    darks=1
+}else{
+    a.style.boxShadow = 'none';
+    dark.style.backgroundColor = 'black';
+    dark.style.boxShadow = '0 0 5px black'
+    darks=0
+}
+}
+let light=0
+idea.onclick = function(){
+if(light==0){
+    flow1.style.display = 'flex';
+    flow2.style.display = 'flex';
+    light=1
+}else{
+    flow1.style.display = 'none';
+    flow2.style.display = 'none';
+    light=0
+}
+}
+
+    </script>
+</body>
+</html>
